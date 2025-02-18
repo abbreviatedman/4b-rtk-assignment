@@ -122,21 +122,23 @@ Once you've updated the `Header` component and confirmed it renders correctly, y
 
 ### Step 7: Create the Router Setup in the App Component
 
-1. In your `src` directory, open the `App.jsx` file.
+1. Install React Router by running `npm install react-router-dom` in the terminal.
 
-2. Import `BrowserRouter`, `Routes`, and `Route` from `react-router-dom`.
+2. In your `src` directory, open the `App.jsx` file.
 
-3. Import the `Header`, `BookList`, and `BookForm` components.
+3. Import `BrowserRouter`, `Routes`, and `Route` from `react-router-dom`.
 
-4. Wrap the content of the `App` component in a `BrowserRouter`.
+4. Import the `Header`, `BookList`, and `BookForm` components.
 
-5. Add the `Header` component to the `App` component inside the `BrowserRouter`.
+5. Wrap the content of the `App` component in a `BrowserRouter`.
 
-6. Use `Routes` and `Route` to define routes for the Home (`/`) and Add Book (`/add-book`) pages.
+6. Add the `Header` component to the `App` component inside the `BrowserRouter`.
 
-7. Set the `element` prop of the `Route` component for the Home route to render the `BookList` component.
+7. Use `Routes` and `Route` to define routes for the Home (`/`) and Add Book (`/add-book`) pages.
 
-8. Set the `element` prop of the `Route` component for the Add Book route to render the `BookForm` component.
+8. Set the `element` prop of the `Route` component for the Home route to render the `BookList` component.
+
+9. Set the `element` prop of the `Route` component for the Add Book route to render the `BookForm` component.
 
 **Check**: Ensure the `App` component sets up the router correctly and that navigating to `/` displays the `BookList` component and `/add-book` displays the `BookForm` component.
 
@@ -211,20 +213,22 @@ Once you've added the styling for the components and confirmed it looks good, yo
 
 ### Step 9: Create the Books Slice
 
-1. In your `src` directory, create a folder named `slices`.
+1. Install redux toolkit by running `npm install @reduxjs/toolkit` in the terminal.
 
-2. Inside the `slices` folder, create a file named `booksSlice.js`.
+2. In your `src` directory, create a folder named `slices`.
 
-3. Import `createSlice` from `@reduxjs/toolkit`.
+3. Inside the `slices` folder, create a file named `booksSlice.js`.
 
-4. Define the initial state with some sample books. Here are a few examples:
+4. Import `createSlice` from `@reduxjs/toolkit`.
+
+5. Define the initial state with some sample books. Here are a few examples:
     - `To Kill a Mockingbird` by Harper Lee, genre: Fiction
     - `1984` by George Orwell, genre: Dystopian
     - `Moby Dick` by Herman Melville, genre: Adventure
 
-5. Use `createSlice` to create the books slice with reducers for adding, updating, deleting, and sorting books.
+6. Use `createSlice` to create the books slice with reducers for adding, updating, deleting, and sorting books.
 
-6. Export the actions and the reducer.
+7. Export the actions and the reducer.
 
 ### Step 10: Create the Preferences Slice
 
